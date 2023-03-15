@@ -123,7 +123,7 @@ function Home() {
           </div>
         </div>
       </section>
-      {/* <section className="h-[65vh]">
+      <section className="min-h-[65vh]">
         <img src="src/assets/candid.jpeg" alt="Photography" />
         <div className="bg-black h-[38vh] relative">
           <div className="absolute bottom-2 right-auto bg-white h-[38vh] w-[95vw] pl-2">
@@ -143,7 +143,7 @@ function Home() {
             </button>
           </div>
         </div>
-      </section> */}
+      </section>
     </div>
   );
 }
