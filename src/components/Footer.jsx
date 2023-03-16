@@ -30,7 +30,7 @@ const Footer = () => {
           <form onSubmit={(e) => handleSubmit(e)}>
             <input
               type="email"
-              className="bg-black text-white border-none"
+              className="bg-black text-white border-none flex-1 hidden"
               placeholder="Enter your email"
             />
           </form>
