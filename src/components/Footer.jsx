@@ -8,6 +8,7 @@ import { SiApplepay, SiGooglepay } from "react-icons/si";
 const Footer = () => {
   function handleSubmit(e) {
     e.preventDefault();
+    //Do Something Here TODO:
   }
 
   return (
@@ -34,13 +35,13 @@ const Footer = () => {
             />
           </form>
         </div>
-        <div className="flex flex-wrap justify-between mx-8 py-4">
-          <FaCcAmex size={45} />
-          <SiApplepay size={45} />
-          <SiGooglepay size={45} />
-          <FaCcMastercard size={45} />
-          <FaCcVisa size={45} />
-          <FaPaypal size={45} />
+        <div className="flex flex-wrap justify-center mx-8 py-4 items-center">
+          <FaCcAmex size={45} className="mx-1" />
+          <SiApplepay size={45} className="mx-1" />
+          <SiGooglepay size={45} className="mx-1" />
+          <FaCcMastercard size={45} className="mx-1" />
+          <FaCcVisa size={45} className="mx-1" />
+          <FaPaypal size={45} className="mx-1" />
         </div>
         <text className="flex justify-center items-center">
           © 2023 Brandon Amarosi
