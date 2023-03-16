@@ -127,13 +127,11 @@ function Home() {
         <div>
           <img src="/images/candid.jpeg" />
         </div>
-        <div className="min-h-[60vh] bg-black relative flex flex-col justify-center min-[400px]:min-h-[46vh]">
+        <div className="min-h-[55vh] bg-black relative flex flex-col justify-center min-[400px]:min-h-[40vh]">
           <div className="bg-white max-w-[90vw] left-5 top-[-10px] absolute  opacity-90 z-10">
-            <div className="flex flex-col items-center">
-              <h1 className="font-bold text-3xl py-6 w-[90vw] text-center">
-                Learn, Connect, Watch
-              </h1>
-              <p className="max-w-[80%] text-justify font-bold ">
+            <div className="flex flex-col items-center mt-8">
+              <h1 className="font-bold text-3xl pb-6">Learn, Connect, Watch</h1>
+              <p className="text-justify px-2">
                 Nullam iaculis sapien vitae rutrum condimentum. Nullam nulla
                 nunc, viverra quis massa eu, pellentesque laoreet tortor.
                 Quisque accumsan nibh pulvinar ante scelerisque, quis pharetra
@@ -142,10 +140,8 @@ function Home() {
                 mus. Sed volutpat odio quam, ultricies venenatis risus ultricies
                 sed.
               </p>
-            </div>
-            <div>
-              <button className="bg-black text-white py-2 px-2 rounded-md m-2">
-                @socials
+              <button className="bg-black text-white py-2 px-4 rounded-md my-2 self-start ml-2">
+                @Socials
               </button>
             </div>
           </div>
