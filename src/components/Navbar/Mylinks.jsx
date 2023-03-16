@@ -1,5 +1,10 @@
 export const links = [
   {
+    name: "Home",
+    submenu: true,
+    sublinks: [],
+  },
+  {
     name: "Store",
     submenu: true,
     sublinks: [
@@ -24,5 +29,10 @@ export const links = [
         ],
       },
     ],
+  },
+  {
+    name: "Contact Me",
+    submenu: true,
+    sublinks: [],
   },
 ];

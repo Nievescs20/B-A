@@ -12,7 +12,7 @@ function NavLinks() {
         <div>
           <div className="px-3 text-left md:cursor-pointer group">
             <h1
-              className="py-7 flex justify-between items-center md:pr-0 pr-5 group text-lg"
+              className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
               // onClick={() => {
               //   heading !== link.name ? setHeading(link.name) : setHeading("");
               //   setSubHeading("");
@@ -40,12 +40,12 @@ function NavLinks() {
                     ></div> */}
                   </div>
                   <div className="bg-white p-5 min-w-[250px] drop-shadow-lg">
-                    {link.sublinks.map((mysublinks) => (
+                    {link.sublinks?.map((mysublinks) => (
                       <div>
                         <h1 className="text-lg font-semibold underline">
                           {mysublinks.Head}
                         </h1>
-                        {mysublinks.sublink.map((slink) => (
+                        {mysublinks?.sublink.map((slink) => (
                           <li className="text-sm text-gray-600 my-2.5 relative">
                             <Link
                               to={slink.link}

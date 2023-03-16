@@ -34,11 +34,6 @@ function Navbar() {
         duration-500 ${open ? "right-0" : "right-[-100%]"}
         `}
           >
-            <li className="flex justify-between">
-              <Link to="/" className="py-7 px-3 inline-block">
-                Home
-              </Link>
-            </li>
             <NavLinks className="mt-4" />
           </ul>
           <ul
