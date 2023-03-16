@@ -5,7 +5,7 @@ function Home() {
   return (
     <div>
       <section
-        className="h-[90vh] bg-Main bg-cover
+        className="h-[91vh] bg-Main bg-cover
     font-[Poppins] md:bg-top bg-center"
       >
         <div className="flex flex-col justify-center text-center items-center h-3/4">
@@ -103,7 +103,7 @@ function Home() {
           <h2 className="text-gray-500">ADOBE</h2>
           <h1 className="font-bold text-3xl">Lightroom Presets</h1>
           <div>
-            <p>
+            <p className="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
               quis arcu erat. Donec vitae libero eu magna sagittis elementum ut
               a tortor. Vestibulum tincidunt, enim quis fringilla posuere, ipsum
@@ -112,7 +112,7 @@ function Home() {
               ultrices efficitur accumsan. Maecenas condimentum sollicitudin
               turpis, quis interdum tellus pellentesque ut.
             </p>
-            <div className="w-[70%] flex justify-between">
+            <div className="w-[80%] flex justify-between">
               <button className="bg-black text-white py-2 px-2 rounded-md mt-2">
                 Collection #1
               </button>
@@ -123,24 +123,31 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="min-h-[65vh]">
-        <img src="/images/candid.jpeg" alt="Photography" />
-        <div className="bg-black h-[38vh] relative">
-          <div className="absolute bottom-2 left-4 bg-white h-[38vh] w-[92vw] pl-2">
-            <h1 className="bg-white font-bold text-3xl text-black py-6">
-              Learn, Connect, Watch
-            </h1>
-            <p>
-              Nullam iaculis sapien vitae rutrum condimentum. Nullam nulla nunc,
-              viverra quis massa eu, pellentesque laoreet tortor. Quisque
-              accumsan nibh pulvinar ante scelerisque, quis pharetra nunc
-              imperdiet. Proin et nunc lectus. Orci varius natoque penatibus et
-              magnis dis parturient montes, nascetur ridiculus mus. Sed volutpat
-              odio quam, ultricies venenatis risus ultricies sed.
-            </p>
-            <button className="bg-black text-white py-2 px-4 rounded-md mt-2">
-              @Socials
-            </button>
+      <section>
+        <div>
+          <img src="/images/candid.jpeg" />
+        </div>
+        <div className="min-h-[60vh] bg-black relative flex flex-col justify-center min-[400px]:min-h-[46vh]">
+          <div className="bg-white max-w-[90vw] left-5 top-[-10px] absolute  opacity-90 z-10">
+            <div className="flex flex-col items-center">
+              <h1 className="font-bold text-3xl py-6 w-[90vw] text-center">
+                Learn, Connect, Watch
+              </h1>
+              <p className="max-w-[80%] text-justify font-bold ">
+                Nullam iaculis sapien vitae rutrum condimentum. Nullam nulla
+                nunc, viverra quis massa eu, pellentesque laoreet tortor.
+                Quisque accumsan nibh pulvinar ante scelerisque, quis pharetra
+                nunc imperdiet. Proin et nunc lectus. Orci varius natoque
+                penatibus et magnis dis parturient montes, nascetur ridiculus
+                mus. Sed volutpat odio quam, ultricies venenatis risus ultricies
+                sed.
+              </p>
+            </div>
+            <div>
+              <button className="bg-black text-white py-2 px-2 rounded-md m-2">
+                @socials
+              </button>
+            </div>
           </div>
         </div>
       </section>
