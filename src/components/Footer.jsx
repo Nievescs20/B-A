@@ -27,10 +27,10 @@ const Footer = () => {
         </p>
         <div className="flex border-solid border-white border-2 items-center my-6 mx-4 w-3/5">
           <AiOutlineMail className="mx-2" size={35} />
-          <form className="flex" onSubmit={(e) => handleSubmit(e)}>
+          <form onSubmit={(e) => handleSubmit(e)}>
             <input
               type="email"
-              className="bg-black text-white border-none flex-1 outline-none"
+              className="bg-black text-white border-none outline-none w-[90%]"
               placeholder="Enter your email"
             />
           </form>
