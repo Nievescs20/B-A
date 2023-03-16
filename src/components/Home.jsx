@@ -18,7 +18,7 @@ function Home() {
         <div className="flex-1 flex">
           <img
             className="md:max-h-[500px] md:max-w-[500px]"
-            src="src/assets/SirRohu.png"
+            src="/images/SirRohu.png"
             alt="profile-pic"
           />
         </div>
@@ -124,9 +124,9 @@ function Home() {
         </div>
       </section>
       <section className="min-h-[65vh]">
-        <img src="src/assets/candid.jpeg" alt="Photography" />
+        <img src="/images/candid.jpeg" alt="Photography" />
         <div className="bg-black h-[38vh] relative">
-          <div className="absolute bottom-2 right-auto bg-white h-[38vh] w-[95vw] pl-2">
+          <div className="absolute bottom-2 left-4 bg-white h-[38vh] w-[92vw] pl-2">
             <h1 className="bg-white font-bold text-3xl text-black py-6">
               Learn, Connect, Watch
             </h1>
