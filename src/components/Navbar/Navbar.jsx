@@ -15,18 +15,10 @@ function Navbar() {
           <img src={Logo} alt="logo" className="md:cursor-pointer h-12" />
         </div>
         <div>
-          <ul className="md:flex hidden uppercase items-center gap-8 font-[Poppins]">
-            <li>
-              <Link to="/" className="py-7 px-3 inline-block text-lg">
-                Home
-              </Link>
-            </li>
-
+          <div className="md:flex hidden uppercase items-center gap-8 font-[Poppins]">
             <NavLinks />
-          </ul>
-          <div className="md:block hidden">
-            <BsCart2 size={30} />
           </div>
+
           {/* Mobile nav */}
           <ul
             className={`
@@ -34,6 +26,15 @@ function Navbar() {
         duration-500 ${open ? "right-0" : "right-[-100%]"}
         `}
           >
+            <div className="flex justify-end">
+              {open && (
+                <VscChromeClose
+                  size={20}
+                  className="mr-4 md:block z-30 cursor-pointer"
+                  onClick={() => setOpen(!open)}
+                />
+              )}
+            </div>
             <NavLinks className="mt-4" />
           </ul>
           <ul
@@ -42,33 +43,58 @@ function Navbar() {
         duration-500 ${cartOpen ? "right-0" : "right-[-100%]"}
         `}
           >
+            <div className="flex justify-end">
+              {cartOpen && (
+                <VscChromeClose
+                  size={20}
+                  className="mr-4 md:block z-30 cursor-pointer"
+                  onClick={() => setCartOpen(!cartOpen)}
+                />
+              )}
+            </div>
             Cart Items Will Go Here
           </ul>
           <div className="flex items-center">
-            {open ? (
-              <VscChromeClose
-                size={20}
-                className="mr-4 md:hidden z-10"
-                onClick={() => setOpen(!open)}
-              />
-            ) : (
+            {!open && (
               <GiHamburgerMenu
                 className="mr-4 md:hidden"
                 size={25}
                 onClick={() => setOpen(!open)}
               />
             )}
-            {cartOpen ? (
-              <VscChromeClose
-                size={20}
-                className="mr-4 md:hidden z-20"
+            {!cartOpen && (
+              <BsCart2
+                className="md:hidden"
+                size={28}
                 onClick={() => setCartOpen(!cartOpen)}
               />
-            ) : (
-              <BsCart2 size={28} onClick={() => setCartOpen(!cartOpen)} />
             )}
           </div>
         </div>
+        <div className="md:block hidden">
+          {!open && (
+            <BsCart2
+              className="cursor-pointer"
+              size={30}
+              onClick={() => setOpen(!open)}
+            />
+          )}
+        </div>
+        <ul
+          className={`
+        hidden md:block bg-white fixed w-1/4 top-0 overflow-y-auto bottom-0 py-24 pl-4
+        duration-500 ${open ? "right-0" : "right-[-100%]"}
+        `}
+        >
+          <div className="flex justify-end">
+            <VscChromeClose
+              size={20}
+              className="mr-4 hidden md:block z-30 cursor-pointer"
+              onClick={() => setOpen(!open)}
+            />
+          </div>
+          Cart Items Will Go Here
+        </ul>
       </div>
     </nav>
   );

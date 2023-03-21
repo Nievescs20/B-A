@@ -10,6 +10,7 @@ module.exports = {
       backgroundImage: {
         Main: "url('assets/mountain_river.jpg')",
         Signature: "url('assets/signature.jpeg')",
+        Photographer: "url('assets/candid.jpeg')",
       },
     },
   },

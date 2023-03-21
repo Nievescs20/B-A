@@ -12,20 +12,20 @@ const Footer = () => {
   }
 
   return (
-    <div className="bg-black py-6">
+    <div className="bg-black py-6 md:px-6">
       {footerData.map((tier) => (
         <FooterField data={tier} />
       ))}
       <div className="flex justify-center items-center">
-        <hr className="w-[90%] my-4" />
+        <hr className="w-[90%] my-4 md:w-[98%]" />
       </div>
-      <div className="text-white px-6">
+      <div className="text-white px-6 md:px-2 lg:px-6">
         <h1 className="text-2xl mb-2">Subscribe!</h1>
         <p className="text-xl ">
           Sign up to get offers, free mobile wallpapers and the first to know
           about new products!
         </p>
-        <div className="flex border-solid border-white border-2 items-center my-6 mx-4 w-3/5">
+        <div className="flex border-solid border-white border-2 items-center my-6 w-3/5 lg:max-w-[40%]">
           <AiOutlineMail className="mx-2" size={35} />
           <form onSubmit={(e) => handleSubmit(e)}>
             <input
@@ -35,7 +35,7 @@ const Footer = () => {
             />
           </form>
         </div>
-        <div className="flex flex-wrap justify-center mx-8 py-4 items-center">
+        <div className="flex flex-wrap justify-center mx-8 py-4 items-center md:min-h-[200px]">
           <FaCcAmex size={45} className="mx-1" />
           <SiApplepay size={45} className="mx-1" />
           <SiGooglepay size={45} className="mx-1" />

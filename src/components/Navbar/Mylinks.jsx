@@ -1,7 +1,7 @@
 export const links = [
   {
     name: "Home",
-    submenu: true,
+    submenu: false,
     sublinks: [],
   },
   {
@@ -32,7 +32,7 @@ export const links = [
   },
   {
     name: "Contact Me",
-    submenu: true,
+    submenu: false,
     sublinks: [],
   },
 ];

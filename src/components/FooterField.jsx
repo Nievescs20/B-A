@@ -33,7 +33,7 @@ function FooterField({ data }) {
           </svg>
         </div>
         {isOpen && (
-          <div className="flex flex-col md:flex-row md:flex-wrap py-4">
+          <div className="flex flex-col  py-4">
             {data.links.map((item, index) => (
               <a
                 key={index}
