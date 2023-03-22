@@ -1,19 +1,18 @@
 const express = require("express");
 const path = require("path");
-const serveStatic = require("serve-static");
 
 const app = express();
 
-// Serve static files from the build folder
-app.use(serveStatic(path.join(__dirname, "..", "build")));
+// Serve static files from the build directory
+app.use(express.static(path.join(__dirname, "..", "dist")));
 
-// Always serve the index.html file for any unknown paths
+// Define a route that returns the index.html file
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "build", "index.html"));
+  res.sendFile(path.join(__dirname, "..", "dist", "index.html"));
 });
 
 // Start the server
 const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+  console.log(`Server listening on port ${port}`);
 });
