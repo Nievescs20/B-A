@@ -1,18 +1,13 @@
 export const links = [
   {
-    name: "Home",
-    submenu: false,
-    sublinks: [],
-  },
-  {
     name: "Store",
     submenu: true,
     sublinks: [
       {
         Head: "Store",
         sublink: [
-          { name: "Presets", link: "/" },
-          { name: "Luts", link: "/" },
+          { name: "Presets", link: "/presets" },
+          { name: "Luts", link: "/luts" },
         ],
       },
     ],
@@ -24,15 +19,10 @@ export const links = [
       {
         Head: "My Work",
         sublink: [
-          { name: "Photography", link: "/" },
-          { name: "Videography", link: "/" },
+          { name: "Photography", link: "/photo" },
+          { name: "Videography", link: "/video" },
         ],
       },
     ],
-  },
-  {
-    name: "Contact Me",
-    submenu: false,
-    sublinks: [],
   },
 ];

@@ -1,52 +1,57 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { links } from "./Mylinks";
+import { v4 as uuidv4 } from "uuid";
 import { GoChevronUp, GoChevronDown } from "react-icons/go";
+import { links } from "../../data";
 
-function NavLinks() {
+function NavLinks({ handleClose }) {
   const [heading, setHeading] = useState("");
   const [subHeading, setSubHeading] = useState("");
   return (
     <>
+      <div>
+        <Link to="/" onClick={() => handleClose(false)}>
+          <h1 className="py-7 flex justify-between items-center md:pr-0 pr-5">
+            Home
+          </h1>
+        </Link>
+      </div>
       {links.map((link) => (
-        <div>
-          <div className="px-3 text-left md:cursor-pointer group">
+        <div key={uuidv4()}>
+          <div className="px-0 text-left md:cursor-pointer group">
             <h1
               className="py-7 flex justify-between items-center md:pr-0 pr-5 group"
-              // onClick={() => {
-              //   heading !== link.name ? setHeading(link.name) : setHeading("");
-              //   setSubHeading("");
-              // }}
+              onClick={() => {
+                heading !== link.name ? setHeading(link.name) : setHeading("");
+                setSubHeading("");
+              }}
             >
               {link.name}
               <span className="text-xl md:hidden inline">
-                {/* <div
-                  name={`${
-                    heading === link.name ? <GoChevronUp /> : <GoChevronUp />
-                  }`}
-                ></div> */}
+                <div>
+                  {heading === link.name ? (
+                    <GoChevronUp color="black" />
+                  ) : (
+                    <GoChevronDown />
+                  )}
+                </div>
               </span>
-              <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2">
-                {/* <ion-icon name="chevron-down"></ion-icon> */}
-              </span>
+              <span className="text-xl md:mt-1 md:ml-2  md:block hidden group-hover:rotate-180 group-hover:-mt-2"></span>
             </h1>
             {link.submenu && (
               <div>
                 <div className="absolute top-20 hidden group-hover:md:block hover:md:block">
-                  <div className="py-1">
-                    {/* <div
-                      className="w-4 h-4 left-3 absolute
-                    mt-1 bg-white rotate-45"
-                    ></div> */}
-                  </div>
                   <div className="bg-white p-5 min-w-[250px] drop-shadow-lg">
                     {link.sublinks?.map((mysublinks) => (
-                      <div>
+                      <div key={uuidv4()}>
                         <h1 className="text-lg font-semibold underline">
                           {mysublinks.Head}
                         </h1>
                         {mysublinks?.sublink.map((slink) => (
-                          <li className="text-sm text-gray-600 my-2.5 relative">
+                          <li
+                            className="text-sm text-gray-600 my-2.5 relative"
+                            key={uuidv4()}
+                          >
                             <Link
                               to={slink.link}
                               className="hover:text-secondary"
@@ -70,7 +75,7 @@ function NavLinks() {
           >
             {/* sublinks */}
             {link.sublinks.map((slinks) => (
-              <div>
+              <div key={uuidv4()}>
                 <div>
                   <h1
                     onClick={() =>
@@ -79,27 +84,20 @@ function NavLinks() {
                         : setSubHeading("")
                     }
                     className="py-4 pl-7 font-semibold md:pr-0 pr-5 flex justify-between items-center md:pr-0 pr-5"
-                  >
-                    {slinks.Head}
-
-                    <span className="text-xl md:mt-1 md:ml-2 inline">
-                      <ion-icon
-                        name={`${
-                          subHeading === slinks.Head
-                            ? "chevron-up"
-                            : "chevron-down"
-                        }`}
-                      ></ion-icon>
-                    </span>
-                  </h1>
+                  ></h1>
                   <div
                     className={`${
-                      subHeading === slinks.Head ? "md:hidden" : "hidden"
-                    }`}
+                      heading === slinks.Head ? "md:hidden" : "hidden"
+                    } mt-[-50px]`}
                   >
                     {slinks.sublink.map((slink) => (
-                      <li className="py-3 pl-14">
-                        <Link to={slink.link}>{slink.name}</Link>
+                      <li className="py-3 pl-7" key={uuidv4()}>
+                        <Link
+                          to={slink.link}
+                          onClick={() => handleClose(false)}
+                        >
+                          {slink.name}
+                        </Link>
                       </li>
                     ))}
                   </div>
@@ -109,6 +107,13 @@ function NavLinks() {
           </div>
         </div>
       ))}
+      <div>
+        <Link to="/contact-me" onClick={() => handleClose(false)}>
+          <h1 className="py-7 flex justify-between items-center md:pr-0 pr-5">
+            Contact Me
+          </h1>
+        </Link>
+      </div>
     </>
   );
 }

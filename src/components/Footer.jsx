@@ -1,5 +1,5 @@
 import React from "react";
-import { footerData } from "../footerLinks";
+import { footerData } from "../data";
 import FooterField from "./FooterField";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaCcAmex, FaCcMastercard, FaCcVisa, FaPaypal } from "react-icons/fa";
@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div className="bg-black py-6 md:px-6">
       {footerData.map((tier) => (
-        <FooterField data={tier} />
+        <FooterField data={tier} key={tier.label} />
       ))}
       <div className="flex justify-center items-center">
         <hr className="w-[90%] my-4 md:w-[98%]" />
@@ -43,9 +43,9 @@ const Footer = () => {
           <FaCcVisa size={45} className="mx-1" />
           <FaPaypal size={45} className="mx-1" />
         </div>
-        <text className="flex justify-center items-center">
+        <h4 className="flex justify-center items-center">
           © 2023 Brandon Amarosi
-        </text>
+        </h4>
       </div>
     </div>
   );

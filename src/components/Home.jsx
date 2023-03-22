@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -14,7 +15,7 @@ function Home() {
           </h1>
         </div>
       </section>
-      <section className="min-h-[75vh] lg:flex py-16 md:py-40 lg:mx-auto lg:max-w-[70%] lg:justify-between">
+      <section className="min-h-[75vh] lg:flex py-16 md:py-40 lg:mx-auto lg:max-w-[70%] lg:justify-between w-[90%] mx-auto">
         <div className="flex">
           <img
             className="min-[550px]:max-h-[400px] min-[550px]:max-w-[400px] md:max-h-[500px] md:max-w-[500px] mx-auto h-auto"
@@ -36,9 +37,11 @@ function Home() {
               felis risus, ut dapibus nibh malesuada eget. Nullam auctor sapien
               vitae molestie ullamcorper.
             </p>
-            <button className="bg-black text-white py-2 px-2 rounded-md mt-2">
-              Contact Me
-            </button>
+            <Link to="contact-me">
+              <button className="bg-black text-white py-2 px-2 rounded-md mt-2">
+                Contact Me
+              </button>
+            </Link>
           </div>
         </div>
       </section>

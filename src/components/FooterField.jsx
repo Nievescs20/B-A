@@ -9,7 +9,7 @@ function FooterField({ data }) {
 
   return (
     <div className="bg-black py-4">
-      <div className="container mx-auto px-4">
+      <div className=" mx-auto px-4">
         <div
           className="flex md:flex-row justify-between items-center cursor-pointer"
           onClick={toggleAccordion}
