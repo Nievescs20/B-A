@@ -7,12 +7,12 @@ const app = express();
 app.use(express.static(path.join(__dirname, "..", "dist")));
 
 // Define a route that returns the index.html file
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "dist", "index.html"));
-});
+// app.get("*", (req, res) => {
+//   res.sendFile(path.join(__dirname, "..", "dist", "index.html"));
+// });
 
 app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, ".. ", "dist", "index.html"));
+  res.sendFile(path.join(__dirname, ".. ", "dist", "index"));
 });
 
 // Start the server
