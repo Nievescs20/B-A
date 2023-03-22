@@ -11,12 +11,12 @@ function Presets() {
           <div key={preset.name} className="my-4">
             <Fade top cascade>
               <img
-                className="h-[175px] w-[175px] md:h-[300px] md:w-[300px] lg:h-[450px] lg:w-[450px]"
+                className="h-[150px] w-[150px] md:h-[300px] md:w-[300px] lg:h-[450px] lg:w-[450px]"
                 src={preset.imgURL}
                 alt={preset.alt}
               />
               <div className="my-2">
-                <p className="text-2xl w-[175px] md:w-[300px] lg:w-[450px]">
+                <p className="text-2xl w-[150px] md:w-[300px] lg:w-[450px]">
                   {preset.name}
                 </p>
                 <div className="flex my-2">
