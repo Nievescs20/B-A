@@ -24,7 +24,7 @@ function Home() {
           />
         </div>
         <div className="flex flex-col items-start max-w-[500px] min-w-[250px] mt-8 mx-auto min-[550px]:max-w-[400px] md:max-w-[500px] lg:min-w-[40%] lg:m-32 lg:mt-0">
-          <h1 className="font-bold text-4xl">Brandon Amarosi</h1>
+          <h1 className="font-bold text-4xl">Brandon Amorosi</h1>
           <div>
             <p className="text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -45,7 +45,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <section className="px-8 flex justify-center items-center">
+      <section className="px-8 md:px-20 flex justify-center items-center">
         <div className="relative w-full md:max-w-[85%] md:max-h-[50%] pb-[56.25%] h-0">
           <iframe
             className="absolute top-0 left-0 w-full h-full"

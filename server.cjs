@@ -1,18 +1,15 @@
 const express = require("express");
 const path = require("path");
+// import express from "express";
+// import path from "path";
 
 const app = express();
 
 // Serve static files from the build directory
-app.use(express.static(path.join(__dirname, "..", "dist")));
-
-// Define a route that returns the index.html file
-// app.get("*", (req, res) => {
-//   res.sendFile(path.join(__dirname, "..", "dist", "index.html"));
-// });
+app.use(express.static(path.join(__dirname, "dist")));
 
 app.get("/*", function (req, res) {
-  res.sendFile(path.join(__dirname, ".. ", "dist", "index"));
+  res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
 
 // Start the server
