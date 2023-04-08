@@ -73,8 +73,8 @@ export const links = [
       {
         Head: "My Work",
         sublink: [
-          { name: "Photography", link: "/photo" },
-          { name: "Videography", link: "/video" },
+          { name: "Photography", link: "/photography" },
+          { name: "Videography", link: "/videography" },
         ],
       },
     ],

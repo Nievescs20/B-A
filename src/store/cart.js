@@ -1,21 +1,28 @@
 const ADD_TO_CART = "ADD_TO_CART";
+const REMOVE_ITEM = "REMOVE_ITEM";
+const UPDATE_QTY = "UPDATE_QTY";
 const RESET_CART = "RESET_CART";
 const GET_CART = "GET_CART";
-const REMOVE_ITEM = "REMOVE_ITEM";
 
 export const addToCart = (item) => ({
   type: ADD_TO_CART,
   item,
 });
 
-export const getCart = (itemId) => ({
-  type: GET_CART,
-  itemId,
-});
-
 export const removeItem = (id) => ({
   type: REMOVE_ITEM,
   id,
+});
+
+export const updateQty = (item, qty) => ({
+  type: UPDATE_QTY,
+  item,
+  qty,
+});
+
+export const getCart = (itemId) => ({
+  type: GET_CART,
+  itemId,
 });
 
 export const resetCart = () => ({
@@ -229,6 +236,17 @@ const cartReducer = (state = initialState, action) => {
         ...state,
         products: state.products.filter((item) => item.id !== action.id),
       };
+
+    case UPDATE_QTY:
+      return {
+        ...state,
+        products: state.products.map((item) =>
+          item.id === action.item.id
+            ? { ...item, qty: (item.qty += action.qty) }
+            : item
+        ),
+      };
+
     case RESET_CART:
       return { products: [] };
     default:
