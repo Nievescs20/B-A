@@ -83,6 +83,8 @@ export const links = [
 
 export const presets = [
   {
+    id: 1,
+    shortName: "custom1",
     name: "Custom Preset 1 | Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/CreamyMoodyTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-1_2200x.jpg?v=1678127865",
@@ -91,6 +93,8 @@ export const presets = [
     origPrice: 60.0,
   },
   {
+    id: 2,
+    shortName: "custom2",
     name: "Custom Preset 2 | Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/AestheticTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-2_2200x.jpg?v=1678126591",
@@ -99,6 +103,8 @@ export const presets = [
     origPrice: 60.0,
   },
   {
+    id: 3,
+    shortName: "custom3",
     name: "Custom Preset 3 | Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/GoldenHourTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-8_57c0a7c5-4398-4163-b9fa-8b3eb16e5936_2200x.jpg?v=1678128943",
@@ -107,6 +113,8 @@ export const presets = [
     origPrice: 60.0,
   },
   {
+    id: 4,
+    shortName: "custom4",
     name: "Custom Preset 4 | Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/WoodlandsTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-4_fca78f6f-978f-4f57-b2f6-7752e883ebb7_2200x.jpg?v=1678133551",
@@ -115,6 +123,8 @@ export const presets = [
     origPrice: 60.0,
   },
   {
+    id: 5,
+    shortName: "custom5",
     name: "Custom Preset 5 | Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/MatteMoodTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-45_5ff4ee78-7f2f-4b3e-a95c-d73765e5e759_2200x.jpg?v=1678131717",
@@ -123,6 +133,8 @@ export const presets = [
     origPrice: 60.0,
   },
   {
+    id: 6,
+    shortName: "custom6",
     name: "Custom Preset 6 | Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/RichMoodyTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-19_2200x.jpg?v=1678132080",
@@ -131,6 +143,8 @@ export const presets = [
     origPrice: 60.0,
   },
   {
+    id: 7,
+    shortName: "custom7",
     name: "Custom Preset 7 | Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/MutedTonesTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-3_88cd338d-5574-4de7-8c4e-ec8bcf977fb2_2200x.jpg?v=1678131818",
@@ -139,6 +153,8 @@ export const presets = [
     origPrice: 60.0,
   },
   {
+    id: 8,
+    shortName: "custom8",
     name: "Custom Preset 8 | Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/SummerMoodTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-22_2200x.jpg?v=1678132538",
@@ -147,6 +163,8 @@ export const presets = [
     origPrice: 60.0,
   },
   {
+    id: 9,
+    shortName: "custom9",
     name: "Custom Preset 9 | Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/CinematicFilmLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-2_2200x.jpg?v=1678127659",
@@ -155,11 +173,42 @@ export const presets = [
     origPrice: 60.0,
   },
   {
+    id: 10,
+    shortName: "custom10",
     name: "Custom Preset 10 | Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/VintageMoodTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-20_2200x.jpg?v=1678132953",
     alt: "preset 10",
     price: 44.0,
     origPrice: 60.0,
+  },
+];
+
+export const presetAccordionData = [
+  {
+    title: "What's Included?",
+    bullets: [
+      "- 54 Presets from 6 Collections, Orange and Teal, Blues, Mood, Portraits, Golden, and Peaks",
+      "- Free updates for life. When new pack updates come out you will be emailed a download link to update your pack.",
+      "- Mobile and Desktop Presets",
+      "- Video Installation Guide",
+      "- Preset Walkthrough Video Guide",
+      "- One-time purchase, Lifetime use",
+      "- Instant Download",
+      "- Lifetime Support",
+      "- RAW Images For You To Practice Your Editing",
+    ],
+  },
+  {
+    title: "Why Do These Presets Actually Work?",
+    bullets: [
+      "- So you've bought some presets in the past or you're looking to buy your first pack and you've heard or experienced bad things in the past. Certain changes to settings, local adjustments and creators applying settings that only work on that photo, at that time, in those specific conditions can ruin your images and make those presets useless. In the last 2 years we have had over 9000 customers which has given us a large pool of feedback and have taken every suggestion on board to improve these presets. Over the last year, we have made these presets to not have any of these issues to make sure you are going to get a result you are happy with. There are short, easy to follow, instructional videos that run you through the presets and I am always happy to answer any questions you may have!",
+    ],
+  },
+  {
+    title: "Easy Installation Guide",
+    bullets: [
+      "- Included with your purchase is an easy installation guide. I have made videos to demonstrate the installation on Mobile (iOS and Android) and Desktop (Mac and Windows). The process is nearly exactly the same on these platforms and I have made it very easy to follow. If you are still having trouble installing the presets. You can contact me via Instagram DM or via E-mail - YOUR EMAIL HERE",
+    ],
   },
 ];

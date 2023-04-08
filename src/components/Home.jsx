@@ -151,7 +151,7 @@ function Home() {
                 sed.
               </p>
               <button className="bg-black text-white py-2 px-4 rounded-md my-2 self-start ml-2">
-                @Socials
+                @SirRohu
               </button>
             </div>
           </div>
