@@ -20,6 +20,7 @@ module.exports = {
         Main: "url('assets/mountain_river.jpg')",
         Signature: "url('assets/signature.jpeg')",
         Photographer: "url('assets/candid.jpeg')",
+        Beach: "url('assets/beach.jpg')",
       },
     },
   },

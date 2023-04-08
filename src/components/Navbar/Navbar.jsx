@@ -31,6 +31,24 @@ function Navbar() {
     }
   }
 
+  function handleCheckout() {
+    fetch("/api/stripe/create-checkout-session", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(cart),
+    })
+      .then((res) => {
+        if (res.ok) return res.json();
+        return res.json().then((json) => Promise.reject(json));
+      })
+      .then(({ url }) => {
+        window.location = url;
+      })
+      .catch((e) => {
+        console.error(e.error);
+      });
+  }
+
   return (
     <nav className="bg-white flex justify-center border-b-2">
       <div className="flex items-center font-medium justify-between w-[90vw]">
@@ -124,7 +142,10 @@ function Navbar() {
                 <h3 className="text-sm font-thin my-3">
                   Shipping, taxes, and discount codes calculated at checkout.
                 </h3>
-                <button className="bg-black text-white w-full py-2">
+                <button
+                  className="bg-black text-white w-full py-2"
+                  onClick={handleCheckout}
+                >
                   Check Out
                 </button>
               </div>

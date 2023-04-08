@@ -8,6 +8,7 @@ import Preset from "./Preset";
 import Luts from "./Luts";
 import Photography from "./Photography";
 import Videography from "./Videography";
+import Confirmation from "./Confirmation";
 
 const RoutesComponent = () => {
   return (
@@ -20,6 +21,7 @@ const RoutesComponent = () => {
         <Route path="/luts" element={<Luts />} />
         <Route path="/photography" element={<Photography />} />
         <Route path="/videography" element={<Videography />} />
+        <Route path="/confirmation" element={<Confirmation />} />
         <Route path="/presets/:presetName" element={<Preset />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
