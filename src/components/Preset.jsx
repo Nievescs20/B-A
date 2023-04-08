@@ -33,24 +33,24 @@ function Preset(props) {
     <div className="flex flex-col items-center md:mt-16">
       <Toaster />
       <div className="flex flex-col items-center md:flex-row md:items-start">
-        <section className="flex flex-col items-center w-[90%] my-8 md:my-0 md:p-8">
+        <section className="flex flex-col items-center w-[90%] mt-8 md:mt-0 md:p-8">
           <img src={preset.imgURL} alt="Preset Image" />
         </section>
-        <hr className="w-[90%] py-2 text-gray-400 md:hidden" />
         <div className="w-[90%] md:p-8">
-          <h1 className="text-2xl font-bold my-4 md:text-4xl md:my-0">
+          <h1 className="text-2xl font-bold my-4 md:text-4xl lg:text-6xl md:my-0 ">
             {preset.name}
           </h1>
-          <div className="flex items-start w-full">
-            <h3 className="text-lg line-through">
+          <div className="flex items-start w-full md:my-4">
+            <h3 className="text-lg line-through md:text-2xl">
               ${preset.origPrice.toFixed(2)}
             </h3>
-            <h3 className="text-lg text-red-500 ml-6">
+            <h3 className="text-lg text-red-500 ml-6 md:text-2xl">
               ${preset.price.toFixed(2)}
             </h3>
           </div>
+          <hr className="w-[90%] my-6 text-gray-400 md:hidden" />
           <button
-            className="w-full py-4 border-black border-solid border-2 hover:bg-black hover:text-white text-xl font-bold active:bg-gray-700"
+            className="w-full py-4 border-black border-solid border-2 hover:bg-black hover:text-white text-xl font-bold active:bg-gray-700 md:text-2xl"
             onClick={() =>
               addItemToCart({
                 id: preset.id,
