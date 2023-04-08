@@ -147,16 +147,65 @@ function Navbar() {
         duration-500 ${open ? "right-0" : "right-[-100%]"}
         `}
         >
-          <div className="flex justify-between w-[90%] mb-4">
+          <div className="flex justify-between w-[95%] mb-2">
             <h1 className="font-bold text-3xl">Cart</h1>
             <VscChromeClose
               size={20}
-              className="hidden md:block z-30 cursor-pointer"
-              onClick={() => setOpen(!open)}
+              className="z-30 cursor-pointer"
+              onClick={() => setCartOpen(!cartOpen)}
             />
           </div>
-          <hr className="w-[90%]" />
-          Cart Items Will Go Here
+          <hr className="w-[95%]" />
+          <div className="w-[95%] flex flex-col justify-between flex-1">
+            <div className="my-3 overflow-y-auto">
+              {cart.length === 0 && <h3>Your cart is currently empty.</h3>}
+              {cart.map((item) => (
+                <div className=" my-3" key={uuidv4()}>
+                  <div className="flex items-start">
+                    <button
+                      className="px-2"
+                      onClick={() => removeItemFromCart(item.id)}
+                    >
+                      x
+                    </button>
+                    <img
+                      src={item.image}
+                      alt="item image"
+                      className="h-[75px] w-[75px]"
+                    />
+                    <div className="px-2">
+                      <h4 className="text-sm">{item.name}</h4>
+                    </div>
+                  </div>
+                  <div className="flex justify-end px-2 my-2">
+                    <div className="flex items-center mr-2">
+                      <button className="">
+                        <AiOutlineMinusCircle size={20} />
+                      </button>
+                      <h4 className="mx-4">{item.qty}</h4>
+                      <button className="">
+                        <AiOutlinePlusCircle size={20} />
+                      </button>
+                    </div>
+                    <h4>${item.price.toFixed(2)}</h4>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <div>
+              <hr />
+              <div className="flex justify-between mt-2">
+                <h2 className="font-bold">SUBTOTAL</h2>
+                <h2 className="">${cartTotal.toFixed(2)}</h2>
+              </div>
+              <h3 className="text-sm font-thin my-3">
+                Shipping, taxes, and discount codes calculated at checkout.
+              </h3>
+              <button className="bg-black text-white w-full py-2">
+                Check Out
+              </button>
+            </div>
+          </div>
         </ul>
       </div>
     </nav>
