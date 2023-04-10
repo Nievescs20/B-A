@@ -10,9 +10,9 @@ import Photography from "./Photography";
 import Videography from "./Videography";
 import Confirmation from "./Confirmation";
 
-const RoutesComponent = () => {
+const RoutesComponent = ({ setCartOpen }) => {
   return (
-    <div>
+    <div onClick={() => setCartOpen(false)}>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/contact-me" element={<ContactMe />} />

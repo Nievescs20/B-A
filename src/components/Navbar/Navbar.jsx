@@ -10,10 +10,9 @@ import { v4 as uuidv4 } from "uuid";
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { removeItem, updateQty } from "../../store/cart";
 
-function Navbar() {
+function Navbar({ cartOpen, setCartOpen }) {
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
-  const [cartOpen, setCartOpen] = useState(false);
   const cart = useSelector((state) => state.cartReducer.products);
   let cartTotal = 0;
   for (const item of cart) {
