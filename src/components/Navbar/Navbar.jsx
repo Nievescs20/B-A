@@ -4,10 +4,10 @@ import Logo from "../../assets/signature.jpeg";
 import NavLinks from "./NavLinks";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
+import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
-import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { removeItem, updateQty } from "../../store/cart";
 
 function Navbar({ cartOpen, setCartOpen }) {
@@ -49,7 +49,7 @@ function Navbar({ cartOpen, setCartOpen }) {
   }
 
   return (
-    <nav className="bg-white flex justify-center border-b-2">
+    <nav className="bg-white flex justify-center border-b-2 h-[10vh]">
       <div className="flex items-center font-medium justify-between w-[90vw]">
         <div className="z-50 p-5 md:w-auto">
           <Link to="/" onClick={() => setOpen(false)}>
@@ -79,11 +79,11 @@ function Navbar({ cartOpen, setCartOpen }) {
           </ul>
           <ul
             className={`z-30 h-[100vh] flex flex-col
-        md:w-2/5 bg-white fixed w-[65%] top-0 bottom-0 py-6 pl-4
+        md:w-2/5 bg-white fixed w-[65%] top-0 bottom-0 pb-6 pl-4
         duration-500 ${cartOpen ? "right-0" : "right-[-100%]"}
         `}
           >
-            <div className="flex justify-between w-[95%] mb-2">
+            <div className="flex justify-between items-center w-[95%] mb-2 border-b-2 h-[10vh]">
               <h1 className="font-bold text-3xl">Cart</h1>
               <VscChromeClose
                 size={20}
@@ -91,7 +91,7 @@ function Navbar({ cartOpen, setCartOpen }) {
                 onClick={() => setCartOpen(!cartOpen)}
               />
             </div>
-            <hr className="w-[95%]" />
+            {/* <hr className="w-[95%]" /> */}
             <div className="w-[95%] flex flex-col justify-between flex-1">
               <div className="my-3 overflow-y-auto">
                 {cart.length === 0 && (

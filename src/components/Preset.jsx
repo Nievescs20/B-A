@@ -32,12 +32,16 @@ function Preset(props) {
   return (
     <div className="flex flex-col items-center md:mt-16">
       <Toaster />
-      <div className="flex flex-col items-center md:flex-row md:items-start">
-        <section className="flex flex-col items-center w-[90%] mt-8 md:mt-0 md:p-8">
-          <img src={preset.imgURL} alt="Preset Image" />
+      <div className="flex flex-col items-center md:flex-row md:items-start w-4/5 lg:w-[65%] md:gap-10 lg:gap-24 lg:items-center">
+        <section className="flex flex-col items-center  mt-8 md:mt-0">
+          <img
+            src={preset.imgURL}
+            alt="Preset Image"
+            className="lg:w-[1200px]"
+          />
         </section>
-        <div className="w-[90%] md:p-8">
-          <h1 className="text-2xl font-bold my-4 md:text-4xl lg:text-6xl md:my-0 ">
+        <div className="w-full">
+          <h1 className="text-2xl font-bold my-4 md:text-4xl lg:text-5xl md:my-0 ">
             {preset.name}
           </h1>
           <div className="flex items-start w-full md:my-4">
@@ -48,9 +52,9 @@ function Preset(props) {
               ${preset.price.toFixed(2)}
             </h3>
           </div>
-          <hr className="w-[90%] my-6 text-gray-400 md:hidden" />
+          <hr className="my-6 text-gray-400" />
           <button
-            className="w-full py-4 border-black border-solid border-2 hover:bg-black hover:text-white text-xl font-bold active:bg-gray-700 md:text-2xl"
+            className="w-full py-4 bg-black border-2 border-black text-white hover:bg-white hover:text-black hover:border-black hover:border-2 text-xl font-bold active:bg-gray-700 md:text-2xl ease-linear duration-200"
             onClick={() =>
               addItemToCart({
                 id: preset.id,
@@ -65,7 +69,7 @@ function Preset(props) {
           </button>
         </div>
       </div>
-      <section className="w-[90%] my-12">
+      <section className="w-4/5 my-12 lg:w-[65%]">
         <h2 className="text-xl font-bold md:text-3xl">
           Instantly transform your photos with presets that actually work.
         </h2>

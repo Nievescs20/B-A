@@ -9,7 +9,7 @@ function PresetField({ data }) {
   };
 
   return (
-    <div className="bg-gray-200 py-4">
+    <div className="bg-gray-200 py-4 border-b-2 border-gray-300">
       <div className=" mx-auto">
         <div
           className="flex md:flex-row justify-between items-center cursor-pointer"
