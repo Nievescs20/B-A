@@ -47,7 +47,7 @@ function Home() {
       </section>
       <section className="px-8 md:px-20 flex justify-center items-center">
         <div className="relative w-full md:max-w-[85%] md:max-h-[50%] pb-[56.25%] h-0">
-          <iframe
+          {/* <iframe
             className="absolute top-0 left-0 w-full h-full"
             width="560"
             height="315"
@@ -56,7 +56,8 @@ function Home() {
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
-          ></iframe>
+          ></iframe> */}
+          <iframe className="absolute top-0 left-0 w-full h-4/5" width="560" height="315" src="https://www.youtube.com/embed/3uTuhbLylmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </section>
       <section className="min-h-[68vh] md:min-h-[40vh] md:flex md:justify-between pt-6 px-8 md:py-20 lg:w-4/5 lg:justify-center lg:px-0 lg:m-auto lg:py-20 lg:min-h-[40vh]">
@@ -138,7 +139,7 @@ function Home() {
           />
         </div>
         <div className="min-h-[55vh] bg-black relative flex flex-col justify-center min-[400px]:min-h-[40vh] md:min-h-[30vh]">
-          <div className="bg-white max-w-[90vw] left-5 top-[-10px] absolute  opacity-90 z-10 sm:left-9 md:left-10">
+          <div className="bg-white max-w-[90vw] left-5 top-[-10px] absolute  opacity-90 z-10 sm:left-9 md:left-10 lg:left-12">
             <div className="flex flex-col items-center mt-8">
               <h1 className="font-bold text-3xl pb-6">Learn, Connect, Watch</h1>
               <p className="text-justify px-2">
