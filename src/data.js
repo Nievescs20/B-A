@@ -4,15 +4,19 @@ export const footerData = [
     links: [
       {
         linkLabel: "Instagram",
-        href: "https://www.instagram.com",
+        href: "https://instagram.com/brandons.captures?igshid=OGQ5ZDc2ODk2ZA==",
       },
       {
         linkLabel: "Youtube",
-        href: "https://www.youtube.com",
+        href: "https://www.youtube.com/@SirRohu",
       },
       {
         linkLabel: "Facebook",
-        href: "https://www.facebook.com",
+        href: "https://www.facebook.com/profile.php?id=100092541022543&mibextid=LQQJ4d",
+      },
+      {
+        linkLabel: "Tik Tok",
+        href: "https://www.tiktok.com/@sirrohu",
       },
     ],
   },

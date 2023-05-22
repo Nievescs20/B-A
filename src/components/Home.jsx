@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
+import HomeTextCarousel from "./HomeTextCarousel"
 
 function Home() {
   return (
@@ -8,6 +9,12 @@ function Home() {
       <section
         className="h-[91vh] bg-Main bg-cover
     font-[Poppins] md:bg-top bg-center"
+    // className="flex items-center justify-center h-screen"
+    // style={{
+    //   animation: 'fade 5s linear forwards',
+    //   backgroundImage: 'url("/images/mountain_river.jpg")',
+    //   backgroundSize: 'cover',
+    // }}
       >
         <div className="flex flex-col justify-center text-center items-center h-3/4">
           <h1 className="md:text-5xl text-3xl text-black font-semibold py-5 bg-white px-4">
@@ -23,22 +30,18 @@ function Home() {
             alt="profile-pic"
           />
         </div>
-        <div className="flex flex-col items-start max-w-[500px] min-w-[250px] mt-8 mx-auto min-[550px]:max-w-[400px] md:max-w-[500px] lg:min-w-[40%] lg:m-32 lg:mt-0">
-          <h1 className="font-bold text-4xl">Brandon Amorosi</h1>
+        <div className="flex flex-col items-start max-w-[400px] min-w-[250px] mt-8 mx-auto min-[550px]:max-w-[400px] md:max-w-[500px] lg:min-w-[40%] lg:m-32 lg:mt-0">
+          <h1 className="font-bold text-6xl mb-4">Brandon Amorosi</h1>
           <div>
-            <p className="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-              faucibus accumsan dolor, eget lacinia metus fringilla auctor. Sed
-              a ultrices quam. Maecenas est mauris, dictum ac aliquet nec,
-              consectetur vitae quam. Proin accumsan neque tellus, eu cursus
-              elit gravida quis. Donec aliquet mauris sit amet felis rhoncus
-              volutpat. Duis vitae ligula eget mauris sagittis placerat gravida
-              et purus. Mauris auctor nibh quis fringilla pulvinar. In iaculis
-              felis risus, ut dapibus nibh malesuada eget. Nullam auctor sapien
-              vitae molestie ullamcorper.
-            </p>
+            {/* <p className="text-justify text-2xl">
+            As a child growing up in Upstate New York, I was always captivated by the world around me. I had an innate curiosity that led me to explore every nook and cranny of my surroundings, always searching for my next adventure.
+            <br/>
+            <br/>
+            As I grew older, I found that I had a talent for capturing moments and memories through photography. I began to experiment with different cameras and techniques, and soon found that I had a true passion for the art of photography. I’ve spent countless hours researching books, watching online tutorials, as well as attending a few classes to learn the art of the craft.
+            </p> */}
+            <HomeTextCarousel/>
             <Link to="contact-me">
-              <button className="bg-black text-white py-2 px-2 rounded-md mt-2">
+              <button className="bg-black text-white py-2 px-2 rounded-md mt-4 text-lg">
                 Contact Me
               </button>
             </Link>
@@ -57,11 +60,11 @@ function Home() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe> */}
-          <iframe className="absolute top-0 left-0 w-full h-4/5" width="560" height="315" src="https://www.youtube.com/embed/3uTuhbLylmw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe className="absolute top-0 left-0 w-full h-4/5" width="560" height="315" src="https://www.youtube.com/embed/lKV2ipMjv5E?loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </section>
-      <section className="min-h-[68vh] md:min-h-[40vh] md:flex md:justify-between pt-6 px-8 md:py-20 lg:w-4/5 lg:justify-center lg:px-0 lg:m-auto lg:py-20 lg:min-h-[40vh]">
-        <div className="flex flex-wrap max-w-[350px] justify-center items-center md:py-10 md:min-w-[325px] max-h-[350px]">
+      <section className="min-h-[68vh] md:min-h-[40vh] md:flex md:justify-between md:items-center pt-0 px-8 md:py-20 lg:w-4/5 lg:justify-center lg:px-0 lg:m-auto lg:py-5 lg:min-h-[40vh]">
+        <div className="flex flex-wrap max-w-[500px] justify-center items-center md:py-10 md:min-w-[325px] max-h-[550px]">
           <Fade left>
             <img
               src="https://halunen.github.io/HomePage/img/Railroad.jpg"
@@ -70,7 +73,7 @@ function Home() {
               //   width: "40%",
               //   margin: "5px",
               // }}
-              className="h-[100px] w-[120px] m-2"
+              className="h-[100px] w-[120px] lg:h-[175px] lg:w-[210px] m-2"
             />
           </Fade>
           <Fade top>
@@ -81,7 +84,7 @@ function Home() {
               //   width: "40%",
               //   margin: "5px",
               // }}
-              className="h-[100px] w-[120px] m-2"
+              className="h-[100px] w-[120px] lg:h-[175px] lg:w-[210px] m-2"
             />
           </Fade>
           <Fade bottom>
@@ -92,7 +95,7 @@ function Home() {
               //   width: "40%",
               //   margin: "5px",
               // }}
-              className="h-[100px] w-[120px] m-2"
+              className="h-[100px] w-[120px] lg:h-[175px] lg:w-[210px] m-2"
             />
           </Fade>
           <Fade right>
@@ -103,7 +106,7 @@ function Home() {
               //   width: "40%",
               //   margin: "5px",
               // }}
-              className="h-[100px] w-[120px] m-2"
+              className="h-[100px] w-[120px] lg:h-[175px] lg:w-[210px] m-2"
             />
           </Fade>
         </div>
@@ -111,14 +114,8 @@ function Home() {
           <h2 className="text-gray-500">ADOBE</h2>
           <h1 className="font-bold text-3xl">Lightroom Presets</h1>
           <div>
-            <p className="text-justify">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-              quis arcu erat. Donec vitae libero eu magna sagittis elementum ut
-              a tortor. Vestibulum tincidunt, enim quis fringilla posuere, ipsum
-              velit cursus erat, interdum sollicitudin ex nibh ut magna. Nunc
-              quis orci eleifend, posuere nunc ut, vehicula massa. Vivamus
-              ultrices efficitur accumsan. Maecenas condimentum sollicitudin
-              turpis, quis interdum tellus pellentesque ut.
+            <p className="text-justify text-2xl">
+            It can be extremely frustrating and time-consuming to edit photos. Trust me, I understand. That’s why I created a collection of presets that simplify the editing process and give your photos that perfect touch. My presets are compatible with Adobe Lightroom as well as Camera Raw. With a range of options to chose from, my presets can help you achieve the perfect look to your photos, below you can find all varieties of my presets. As well as LUT’s to bring your video footage to the next level.
             </p>
             <div className="w-[80%] flex justify-between md:w-[60%] lg:w-[40%]">
               <button className="bg-black text-white py-2 px-2 rounded-md mt-2">
@@ -138,10 +135,10 @@ function Home() {
             src="/images/candid.jpeg"
           />
         </div>
-        <div className="min-h-[55vh] bg-black relative flex flex-col justify-center min-[400px]:min-h-[40vh] md:min-h-[30vh]">
-          <div className="bg-white max-w-[90vw] left-5 top-[-10px] absolute  opacity-90 z-10 sm:left-9 md:left-10 lg:left-12">
+        {/* <div className="min-h-[55vh] bg-black relative flex flex-col justify-center min-[400px]:min-h-[40vh] md:min-h-[30vh]"> */}
+          {/* <div className="bg-white max-w-[90vw] left-5 top-[-10px] absolute opacity-90 z-10 sm:left-9 md:left-10 lg:left-12">
             <div className="flex flex-col items-center mt-8">
-              <h1 className="font-bold text-3xl pb-6">Learn, Connect, Watch</h1>
+              <h1 className="font-bold text-3xl pb-6">Where to Find Me</h1>
               <p className="text-justify px-2">
                 Nullam iaculis sapien vitae rutrum condimentum. Nullam nulla
                 nunc, viverra quis massa eu, pellentesque laoreet tortor.
@@ -155,8 +152,8 @@ function Home() {
                 @SirRohu
               </button>
             </div>
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
       </section>
     </div>
   );
