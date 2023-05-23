@@ -83,9 +83,9 @@ function Preset(props) {
           Instantly transform your photos with presets that actually work.
         </h2>
         <ul className="my-6 md:text-lg">
-{preset.description.map((bullet) => (
-  <li key={bullet}> - {bullet}</li>
-))}
+          {preset.description && preset.description.map((bullet) => (
+            <li key={bullet}> - {bullet}</li>
+          ))}
         </ul>
         <div className="flex flex-col">
           {presetAccordionData.map((element) => (
