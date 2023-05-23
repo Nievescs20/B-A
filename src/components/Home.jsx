@@ -51,7 +51,7 @@ function Home() {
           <iframe className="absolute top-0 left-0 w-full h-full lg:h-4/5" width="560" height="315" src="https://www.youtube.com/embed/lKV2ipMjv5E?loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </section>
-      <section className="flex flex-col items-center min-h-[68vh] md:min-h-[40vh] md:flex-row md:justify-between md:items-center pt-0 px-8 md:py-20 lg:w-4/5 lg:justify-center lg:px-0 lg:m-auto lg:py-5 lg:pt-0 lg:min-h-[40vh]">
+      <section className="flex flex-col items-center min-h-[68vh] md:min-h-[40vh] md:flex-row md:justify-between md:items-center py-16 px-8 md:py-20 lg:w-4/5 lg:justify-center lg:px-0 lg:m-auto lg:py-5 lg:pt-0 lg:min-h-[40vh]">
       <div className="grid grid-cols-2 md:grid-cols-2 gap-4 max-w-[500px] justify-center items-center md:py-10 md:min-w-[325px] max-h-[550px] mr-6">
   <Fade left>
     <img
