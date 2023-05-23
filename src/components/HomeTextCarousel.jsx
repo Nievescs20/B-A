@@ -11,7 +11,7 @@ const TextCarousel = () => {
       autoPlay
       infiniteLoop
       interval={5000}
-      className='max-[768px]:max-w-[380px]'
+      className='w-[340px] lg:w-[425px]'
     >
       <div className='text-justify text-lg lg:text-xl'>
         <p>As a child growing up in Upstate New York, I was always captivated by the world around me. I had an innate curiosity that led me to explore every nook and cranny of my surroundings, always searching for my next adventure.</p>
