@@ -1,9 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import { presets } from "../data";
 
 function Presets() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="px-[5%] flex flex-col items-center">
       <h1 className="text-5xl my-8 font-bold">Presets</h1>

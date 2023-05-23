@@ -86,10 +86,11 @@ function Home() {
             It can be extremely frustrating and time-consuming to edit photos. Trust me, I understand. That’s why I created a collection of presets that simplify the editing process and give your photos that perfect touch. My presets are compatible with Adobe Lightroom as well as Camera Raw. With a range of options to chose from, my presets can help you achieve the perfect look to your photos, below you can find all varieties of my presets. As well as LUT’s to bring your video footage to the next level.
             </p>
             <div className="w-[80%] flex justify-between md:w-[60%] lg:w-[40%]">
+              <Link to="/presets">
               <button className="bg-black text-white text-lg py-2 px-8 rounded-md mt-2">
                 Presets
               </button>
-
+              </Link>
             </div>
           </div>
         </div>
