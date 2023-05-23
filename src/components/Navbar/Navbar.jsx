@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../assets/signature.jpeg";
+import Logo from "../../assets/logo.jpg";
 import NavLinks from "./NavLinks";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { VscChromeClose } from "react-icons/vsc";
@@ -53,7 +53,7 @@ function Navbar({ cartOpen, setCartOpen }) {
       <div className="flex items-center font-medium justify-between w-[90vw]">
         <div className="z-50 p-5 md:w-auto">
           <Link to="/" onClick={() => setOpen(false)}>
-            <img src={Logo} alt="logo" className="md:cursor-pointer h-12" />
+            <img src={Logo} alt="logo" className="md:cursor-pointer h-20" />
           </Link>
         </div>
         <div>
@@ -166,7 +166,7 @@ function Navbar({ cartOpen, setCartOpen }) {
         </div>
         <div className="md:block hidden">
           <BsCart2
-            className="cursor-pointer"
+            className="cursor-pointer mx-10"
             size={30}
             color={cart.length === 0 ? "black" : "red"}
             onClick={() => {
