@@ -46,12 +46,13 @@ function Preset(props) {
           />
         </section>
         <div className="w-full">
-          <h1 className="text-2xl font-bold my-4 md:text-4xl lg:text-5xl md:my-0 ">
-            {`${preset.name}\n`}
-            <br/>
-            <hr className="my-2"/>
-            {preset.shortName}
+          <h1 className="text-2xl font-bold my-4 md:text-4xl lg:text-5xl md:my-0 text-gray-500 lg:mb-4">
+            {`${preset.name} |`}
           </h1>
+          {/* <br/> */}
+          <h1 className="text-2xl font-bold my-4 md:text-4xl lg:text-5xl md:my-0 ">
+            {preset.shortName}
+            </h1>
           <div className="flex items-start w-full md:my-4">
             {preset.origPrice && <h3 className="text-lg line-through md:text-2xl text-red-500">
               ${preset.origPrice.toFixed(2)}
@@ -81,15 +82,11 @@ function Preset(props) {
         <h2 className="text-xl font-bold md:text-3xl">
           Instantly transform your photos with presets that actually work.
         </h2>
-        <p className="my-6 md:text-lg">
-          This pack has all 54 of my Lightroom Presets from packs, Blues, Mood,
-          Portraits, Orange and Teal, Golden, and Peaks. This pack will cover
-          all types of photos and will keep your shots looking consistent and
-          cohesive. It doesn’t matter what camera you are shooting with these
-          presets will work with all cameras and photo styles. If you want a
-          clean, consistent preset pack that actually works with your shots, The
-          Master Collection is for you.
-        </p>
+        <ul className="my-6 md:text-lg">
+{preset.description.map((bullet) => (
+  <li key={bullet}> - {bullet}</li>
+))}
+        </ul>
         <div className="flex flex-col">
           {presetAccordionData.map((element) => (
             <PresetField data={element} key={uuidv4()} />

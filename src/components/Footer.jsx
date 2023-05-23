@@ -44,7 +44,7 @@ const Footer = () => {
           Sign up to get offers, free mobile wallpapers and the first to know
           about new products!
         </p>
-        <div className="flex border-solid border-white border-2 items-center my-6 w-3/5 md:w-full">
+        <div className="flex border-solid border-white border-2 items-center my-6 w-3/5 :w-full">
           <AiOutlineMail className="mx-2" size={35} />
           <form onSubmit={(e) => handleSubmit(e)}>
             <input

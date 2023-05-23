@@ -24,16 +24,24 @@ export const footerData = [
     label: "Lightroom Presets",
     links: [
       {
-        linkLabel: "The Master Collection",
-        href: "https://randomwordgenerator.com/picture.php",
+        linkLabel: '15 "Blues',
+        href: "/presets/blues",
       },
       {
-        linkLabel: "Blues",
-        href: "https://randomwordgenerator.com/picture.php",
+        linkLabel: '10 "Golden Hour',
+        href: "/presets/golden-hour",
       },
       {
-        linkLabel: "Warmth",
-        href: "https://randomwordgenerator.com/picture.php",
+        linkLabel: '10 "Orange and Teals',
+        href: "/presets/orange-and-teal",
+      },
+      {
+        linkLabel: '13 "portraits',
+        href: "/presets/orange-and-teal",
+      },
+      {
+        linkLabel: 'All in One Collection',
+        href: "/presets/all-in-one",
       },
     ],
   },
@@ -136,25 +144,26 @@ export const presets = [
     alt: "preset 5",
     price: 39.0,
     origPrice: 55.0,
+    description: ["60 Desktop and Mobile Presets", "Actively Updated", "Endless Opportunity"]
   },
 
 ];
 
 export const presetAccordionData = [
-  {
-    title: "What's Included?",
-    bullets: [
-      "- 54 Presets from 6 Collections, Orange and Teal, Blues, Mood, Portraits, Golden, and Peaks",
-      "- Free updates for life. When new pack updates come out you will be emailed a download link to update your pack.",
-      "- Mobile and Desktop Presets",
-      "- Video Installation Guide",
-      "- Preset Walkthrough Video Guide",
-      "- One-time purchase, Lifetime use",
-      "- Instant Download",
-      "- Lifetime Support",
-      "- RAW Images For You To Practice Your Editing",
-    ],
-  },
+  // {
+  //   title: "What's Included?",
+  //   bullets: [
+  //     "- 54 Presets from 6 Collections, Orange and Teal, Blues, Mood, Portraits, Golden, and Peaks",
+  //     "- Free updates for life. When new pack updates come out you will be emailed a download link to update your pack.",
+  //     "- Mobile and Desktop Presets",
+  //     "- Video Installation Guide",
+  //     "- Preset Walkthrough Video Guide",
+  //     "- One-time purchase, Lifetime use",
+  //     "- Instant Download",
+  //     "- Lifetime Support",
+  //     "- RAW Images For You To Practice Your Editing",
+  //   ],
+  // },
   {
     title: "Why Do These Presets Actually Work?",
     bullets: [
