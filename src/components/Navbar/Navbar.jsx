@@ -53,7 +53,7 @@ function Navbar({ cartOpen, setCartOpen }) {
       <div className="flex items-center font-medium justify-between w-[90vw]">
         <div className="z-50 p-5 md:w-auto">
           <Link to="/" onClick={() => setOpen(false)}>
-            <img src={Logo} alt="logo" className="md:cursor-pointer h-20" />
+            <img src={Logo} alt="logo" className="md:cursor-pointer h-16" />
           </Link>
         </div>
         <div>
