@@ -159,6 +159,7 @@ function Navbar({ cartOpen, setCartOpen }) {
             <BsCart2
               className="md:hidden"
               size={28}
+              color={cart.length === 0 ? "black" : "red"}
               onClick={() => setCartOpen(!cartOpen)}
             />
           </div>
@@ -167,6 +168,7 @@ function Navbar({ cartOpen, setCartOpen }) {
           <BsCart2
             className="cursor-pointer"
             size={30}
+            color={cart.length === 0 ? "black" : "red"}
             onClick={() => {
               console.log("open cart");
               setCartOpen(true);

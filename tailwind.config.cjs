@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      screens:{
+        custom: "1450px"
+      },
       animations: {
         fadeIn: "fadeIn 2s ease-in forwards",
       },
