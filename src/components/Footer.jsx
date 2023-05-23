@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom"
 import { footerData, presets } from "../data";
 import FooterField from "./FooterField";
 import { AiOutlineMail } from "react-icons/ai";
@@ -34,7 +35,9 @@ const Footer = () => {
         <h1 className="text-2xl mb-6">LIGHTROOM PRESETS</h1>
         <div className="flex flex-col gap-5 text-lg">
         {presets.map((preset) => (
-            <a href={`/presets/${preset.id}`}>{preset.shortName}</a>
+          <Link key={preset.id} to={`/presets/${preset.link}`}>
+            <h1>{preset.shortName}</h1>
+          </Link>
           ))}
         </div>
       </div>
