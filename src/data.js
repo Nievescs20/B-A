@@ -88,104 +88,56 @@ export const links = [
 export const presets = [
   {
     id: 1,
-    shortName: "custom1",
-    name: "Custom Preset 1 | Adobe Lightroom Presets",
+    link:"blues",
+    shortName: '15 "Blues"',
+    name: "Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/CreamyMoodyTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-1_2200x.jpg?v=1678127865",
     alt: "preset 1",
-    price: 22.0,
-    origPrice: 60.0,
+    price: 10.0,
   },
   {
     id: 2,
-    shortName: "custom2",
-    name: "Custom Preset 2 | Adobe Lightroom Presets",
+    link:"golden-hour",
+    shortName: '10 "Golden Hour"',
+    name: "Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/AestheticTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-2_2200x.jpg?v=1678126591",
     alt: "preset 2",
-    price: 25.0,
-    origPrice: 60.0,
+    price: 10.0,
   },
   {
     id: 3,
-    shortName: "custom3",
-    name: "Custom Preset 3 | Adobe Lightroom Presets",
+    link:"orange-and-teal",
+    shortName: '10 "Orange and Teals"',
+    name: "Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/GoldenHourTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-8_57c0a7c5-4398-4163-b9fa-8b3eb16e5936_2200x.jpg?v=1678128943",
     alt: "preset 3",
-    price: 22.0,
-    origPrice: 60.0,
+    price: 10.0,
   },
   {
     id: 4,
-    shortName: "custom4",
-    name: "Custom Preset 4 | Adobe Lightroom Presets",
+    shortName: '13 "Portraits"',
+    link:"portraits",
+    name: "Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/WoodlandsTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-4_fca78f6f-978f-4f57-b2f6-7752e883ebb7_2200x.jpg?v=1678133551",
     alt: "preset 4",
-    price: 30.0,
-    origPrice: 60.0,
+    price: 10.0,
   },
   {
     id: 5,
-    shortName: "custom5",
-    name: "Custom Preset 5 | Adobe Lightroom Presets",
+    link:"all-in-one",
+    shortName: "All in One Collection",
+    name: "Adobe Lightroom Presets",
     imgURL:
       "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/MatteMoodTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-45_5ff4ee78-7f2f-4b3e-a95c-d73765e5e759_2200x.jpg?v=1678131717",
     alt: "preset 5",
-    price: 25.0,
-    origPrice: 60.0,
+    price: 39.0,
+    origPrice: 55.0,
   },
-  {
-    id: 6,
-    shortName: "custom6",
-    name: "Custom Preset 6 | Adobe Lightroom Presets",
-    imgURL:
-      "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/RichMoodyTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-19_2200x.jpg?v=1678132080",
-    alt: "preset 6",
-    price: 50.0,
-    origPrice: 60.0,
-  },
-  {
-    id: 7,
-    shortName: "custom7",
-    name: "Custom Preset 7 | Adobe Lightroom Presets",
-    imgURL:
-      "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/MutedTonesTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-3_88cd338d-5574-4de7-8c4e-ec8bcf977fb2_2200x.jpg?v=1678131818",
-    alt: "preset 7",
-    price: 19.0,
-    origPrice: 60.0,
-  },
-  {
-    id: 8,
-    shortName: "custom8",
-    name: "Custom Preset 8 | Adobe Lightroom Presets",
-    imgURL:
-      "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/SummerMoodTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-22_2200x.jpg?v=1678132538",
-    alt: "preset 8",
-    price: 15.0,
-    origPrice: 60.0,
-  },
-  {
-    id: 9,
-    shortName: "custom9",
-    name: "Custom Preset 9 | Adobe Lightroom Presets",
-    imgURL:
-      "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/CinematicFilmLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-2_2200x.jpg?v=1678127659",
-    alt: "preset 9",
-    price: 27.0,
-    origPrice: 60.0,
-  },
-  {
-    id: 10,
-    shortName: "custom10",
-    name: "Custom Preset 10 | Adobe Lightroom Presets",
-    imgURL:
-      "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/VintageMoodTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-20_2200x.jpg?v=1678132953",
-    alt: "preset 10",
-    price: 44.0,
-    origPrice: 60.0,
-  },
+
 ];
 
 export const presetAccordionData = [

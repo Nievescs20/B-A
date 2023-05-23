@@ -26,7 +26,7 @@ function Home() {
         </div>
         <div className="flex flex-col items-center max-w-[380px] mt-8 min-[550px]:max-w-[400px] md:max-w-[450px] lg:ml-32 lg:mt-0">
           <h1 className="font-bold text-4xl mb-4 mx-auto xl:text-5xl">Brandon Amorosi</h1>
-          <div className="max-w-[400px]">
+          <div className="max-w-[400px] md:max-w-[500px]">
             <HomeTextCarousel/>
             <Link to="contact-me">
               <button className="bg-black text-white py-2 px-2 rounded-md mt-4 text-lg">
@@ -48,7 +48,7 @@ function Home() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen
           ></iframe> */}
-          <iframe className="absolute top-0 left-0 w-full h-full lg:h-4/5" width="560" height="315" src="https://www.youtube.com/embed/lKV2ipMjv5E?loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <iframe className="absolute top-0 left-0 w-full h-full lg:h-4/5" width="560" height="315" src="https://www.youtube.com/embed/lKV2ipMjv5E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
       </section>
       <section className="flex flex-col items-center min-h-[68vh] md:min-h-[40vh] md:flex-row md:justify-between md:items-center py-16 px-8 md:py-20 lg:w-4/5 lg:justify-center lg:px-0 lg:m-auto lg:py-5 lg:pt-0 lg:min-h-[40vh]">

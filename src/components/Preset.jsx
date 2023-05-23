@@ -11,7 +11,8 @@ function Preset(props) {
   const cart = useSelector((state) => state.cartReducer.products);
   const dispatch = useDispatch();
   const { presetName } = useParams();
-  const preset = presets.filter((preset) => preset.shortName === presetName)[0];
+  const preset = presets.filter((preset) => preset.link === presetName)[0] || {};
+  console.log("preset", preset)
 
   function addItemToCart(item) {
     toast(`${item.name} Added To Cart!`, {
@@ -29,6 +30,10 @@ function Preset(props) {
     dispatch(addToCart(item));
   }
 
+  if (!(preset.id)) {
+    return <h1>Loading...</h1>
+  }
+
   return (
     <div className="flex flex-col items-center md:mt-16">
       <Toaster />
@@ -42,13 +47,16 @@ function Preset(props) {
         </section>
         <div className="w-full">
           <h1 className="text-2xl font-bold my-4 md:text-4xl lg:text-5xl md:my-0 ">
-            {preset.name}
+            {`${preset.name}\n`}
+            <br/>
+            <hr className="my-2"/>
+            {preset.shortName}
           </h1>
           <div className="flex items-start w-full md:my-4">
-            <h3 className="text-lg line-through md:text-2xl">
+            {preset.origPrice && <h3 className="text-lg line-through md:text-2xl text-red-500">
               ${preset.origPrice.toFixed(2)}
-            </h3>
-            <h3 className="text-lg text-red-500 ml-6 md:text-2xl">
+            </h3>}
+            <h3 className="text-lg ml-6 md:text-2xl">
               ${preset.price.toFixed(2)}
             </h3>
           </div>
