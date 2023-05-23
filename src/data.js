@@ -1,6 +1,6 @@
 export const footerData = [
   {
-    label: "@Socials",
+    label: "Socials",
     links: [
       {
         linkLabel: "Instagram",
