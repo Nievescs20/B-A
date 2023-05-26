@@ -46,7 +46,7 @@ function ContactMe() {
                 Name
               </label>
               <input
-                className="border-gray-200 border-2 rounded"
+                className="border-gray-200 border-2 rounded p-2 md:text-lg"
                 type="text"
                 id="name"
                 name="name"
@@ -60,7 +60,7 @@ function ContactMe() {
                 Email
               </label>
               <input
-                className="border-gray-200 border-2 rounded"
+                className="border-gray-200 border-2 rounded p-2 md:text-lg"
                 type="email"
                 id="email"
                 name="email"
@@ -75,7 +75,7 @@ function ContactMe() {
               Message
             </label>
             <textarea
-              className="border-gray-200 border-2 rounded resize-none"
+              className="border-gray-200 border-2 rounded resize-none p-2 md:text-lg"
               id="message"
               name="message"
               value={message}

@@ -173,7 +173,7 @@ export const presetAccordionData = [
   {
     title: "Easy Installation Guide",
     bullets: [
-      "- Included with your purchase is an easy installation guide. I have made videos to demonstrate the installation on Mobile (iOS and Android) and Desktop (Mac and Windows). The process is nearly exactly the same on these platforms and I have made it very easy to follow. If you are still having trouble installing the presets. You can contact me via Instagram DM or via E-mail - YOUR EMAIL HERE",
+      "- Included with your purchase is an easy installation guide. I have made videos to demonstrate the installation on Mobile (iOS and Android) and Desktop (Mac and Windows). The process is nearly exactly the same on these platforms and I have made it very easy to follow. If you are still having trouble installing the presets. You can contact me via Instagram DM or via E-mail",
     ],
   },
 ];

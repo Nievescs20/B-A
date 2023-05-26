@@ -15,7 +15,7 @@ function PresetField({ data }) {
           className="flex md:flex-row justify-between items-center cursor-pointer"
           onClick={toggleAccordion}
         >
-          <h2 className="font-medium text-black text-lg pl-2">{data.title}</h2>
+          <h2 className="font-bold text-black text-lg pl-2">{data.title}</h2>
           <svg
             className={`w-6 h-6 text-white transform ${
               isOpen ? "rotate-180" : ""
@@ -34,10 +34,10 @@ function PresetField({ data }) {
           </svg>
         </div>
         {isOpen && (
-          <div className="flex flex-col bg-white pl-2">
+          <div className="flex flex-col bg-gray-200 pl-2">
             <ul>
               {data.bullets.map((bullet) => (
-                <li className="my-4 text-black" key={uuidv4()}>
+                <li className="my-4 text-black bg-gray-200 text-justify px-8" key={uuidv4()}>
                   {bullet}
                 </li>
               ))}

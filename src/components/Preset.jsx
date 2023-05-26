@@ -57,7 +57,7 @@ function Preset(props) {
             {preset.origPrice && <h3 className="text-lg line-through md:text-2xl text-red-500">
               ${preset.origPrice.toFixed(2)}
             </h3>}
-            <h3 className="text-lg ml-6 md:text-2xl">
+            <h3 className="text-lg md:text-2xl">
               ${preset.price.toFixed(2)}
             </h3>
           </div>
