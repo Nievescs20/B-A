@@ -54,7 +54,7 @@ function Preset(props) {
             {preset.shortName}
             </h1>
           <div className="flex items-start w-full md:my-4">
-            {preset.origPrice && <h3 className="text-lg line-through md:text-2xl text-red-500">
+            {preset.origPrice && <h3 className="text-lg line-through md:text-2xl text-red-500 mr-2">
               ${preset.origPrice.toFixed(2)}
             </h3>}
             <h3 className="text-lg md:text-2xl">
