@@ -150,20 +150,6 @@ export const presets = [
 ];
 
 export const presetAccordionData = [
-  // {
-  //   title: "What's Included?",
-  //   bullets: [
-  //     "- 54 Presets from 6 Collections, Orange and Teal, Blues, Mood, Portraits, Golden, and Peaks",
-  //     "- Free updates for life. When new pack updates come out you will be emailed a download link to update your pack.",
-  //     "- Mobile and Desktop Presets",
-  //     "- Video Installation Guide",
-  //     "- Preset Walkthrough Video Guide",
-  //     "- One-time purchase, Lifetime use",
-  //     "- Instant Download",
-  //     "- Lifetime Support",
-  //     "- RAW Images For You To Practice Your Editing",
-  //   ],
-  // },
   {
     title: "Why Do These Presets Actually Work?",
     bullets: [
