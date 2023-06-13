@@ -69,7 +69,7 @@ const Footer = () => {
           <FaPaypal size={45} className="mx-1" />
         </div>
         <h4 className="flex justify-center items-center">
-          © 2023 Brandon Amarosi
+          © 2023 Brandon Amorosi
         </h4>
       </div>
     </div>
