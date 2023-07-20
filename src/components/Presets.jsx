@@ -14,7 +14,7 @@ function Presets() {
       <h1 className="text-5xl my-8 font-bold">Presets</h1>
       <div className="flex flex-wrap justify-around">
         {presets.map((preset) => (
-          <div key={preset.name} className="my-4">
+          <div key={preset.link} className="my-4">
             <Link to={`/presets/${preset.link}`}>
               <Fade top cascade>
                 <img

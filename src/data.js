@@ -100,7 +100,7 @@ export const presets = [
     shortName: '15 "Blues"',
     name: "Adobe Lightroom Presets",
     imgURL:
-      "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/CreamyMoodyTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-1_2200x.jpg?v=1678127865",
+      "https://diggers-public.s3.eu-west-3.amazonaws.com/projects/6f994f1b-05c5-4665-8820-d1ab90444cdf/cover.jpg",
     alt: "preset 1",
     price: 10.0,
   },
@@ -110,7 +110,7 @@ export const presets = [
     shortName: '10 "Golden Hour"',
     name: "Adobe Lightroom Presets",
     imgURL:
-      "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/AestheticTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-2_2200x.jpg?v=1678126591",
+      "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d66a2f61-520c-4e04-83b4-f00c00cd60c3/dfwf375-44e0738a-386e-49a2-877e-0f49b821647f.jpg/v1/fill/w_400,h_400,q_70,strp/golden_hour_by_daralaluz_dfwf375-400t.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQyNSIsInBhdGgiOiJcL2ZcL2Q2NmEyZjYxLTUyMGMtNGUwNC04M2I0LWYwMGMwMGNkNjBjM1wvZGZ3ZjM3NS00NGUwNzM4YS0zODZlLTQ5YTItODc3ZS0wZjQ5YjgyMTY0N2YuanBnIiwid2lkdGgiOiI8PTE0MjUifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.VeaWyU_waS4MA3845u7I1vfZyc_OjscbQ7xAlNmdmqw",
     alt: "preset 2",
     price: 10.0,
   },
@@ -120,7 +120,7 @@ export const presets = [
     shortName: '10 "Orange and Teals"',
     name: "Adobe Lightroom Presets",
     imgURL:
-      "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/GoldenHourTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-8_57c0a7c5-4398-4163-b9fa-8b3eb16e5936_2200x.jpg?v=1678128943",
+      "https://i.pinimg.com/originals/40/f2/03/40f2030988b6ce2cfd2449d17fd0bd1f.jpg",
     alt: "preset 3",
     price: 10.0,
   },
@@ -130,7 +130,7 @@ export const presets = [
     link:"portraits",
     name: "Adobe Lightroom Presets",
     imgURL:
-      "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/WoodlandsTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-4_fca78f6f-978f-4f57-b2f6-7752e883ebb7_2200x.jpg?v=1678133551",
+      "https://cdn-images.podbay.fm/eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJodHRwczovL21lZGlhLnJlZGNpcmNsZS5jb20vaW1hZ2VzLzIwMjIvNy8yMi8zLzdkYjg4MWM1LWJhYTgtNDJjNC04ZDdjLTk1Y2U2YjZhN2M5YV9fNDhiYTdkZDgtYWUwZi00YzVmLTlmZWQtOTNmZjcwZmJmMzJiXzM3Nzg5MzIyLmpwZyIsImZhbGxiYWNrIjoiaHR0cHM6Ly9pczEtc3NsLm16c3RhdGljLmNvbS9pbWFnZS90aHVtYi9Qb2RjYXN0czEyNC92NC85OC84YS9hZi85ODhhYWYwNi1iYjg0LTViYmMtNjBmNi0yZDVlM2E5ZTE3MDAvbXphXzE3ODUyNzgxMjQ3NjMxMDQxMDk3LnBuZy82MDB4NjAwYmIuanBnIn0.ze60PEcvkqo250OSjEAIfASf70csWulkxIiksQODopo.jpg?width=400&height=400",
     alt: "preset 4",
     price: 10.0,
   },
@@ -140,7 +140,7 @@ export const presets = [
     shortName: "All in One Collection",
     name: "Adobe Lightroom Presets",
     imgURL:
-      "https://cdn.shopify.com/s/files/1/0399/4802/6006/products/MatteMoodTheBestLightroomPresetsMobileLrAppInstagagramTravelLifestyleSummerPortraitFilmNatural-45_5ff4ee78-7f2f-4b3e-a95c-d73765e5e759_2200x.jpg?v=1678131717",
+      "https://cdn.shopify.com/s/files/1/0280/2450/4454/files/image_eeac45ee-1436-487a-8512-53ba652250ba_400x.jpg?v=1685393213",
     alt: "preset 5",
     price: 39.0,
     origPrice: 55.0,

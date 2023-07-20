@@ -27,7 +27,7 @@ const Footer = () => {
         <h1 className="text-2xl mb-6">SOCIALS</h1>
         <div className="flex flex-col gap-5 text-lg">
           {footerData[0].links.map((social) => (
-            <a href={social.href}>{social.linkLabel}</a>
+            <a key={social.href} href={social.href}>{social.linkLabel}</a>
           ))}
         </div>
       </div>

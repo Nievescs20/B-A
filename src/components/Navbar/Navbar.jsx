@@ -8,10 +8,20 @@ import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { BsCart2 } from "react-icons/bs";
 import { useSelector, useDispatch } from "react-redux";
 import { v4 as uuidv4 } from "uuid";
+import { useUser, UserButton, SignOutButton } from "@clerk/clerk-react";
 import { removeItem, updateQty } from "../../store/cart";
 
 function Navbar({ cartOpen, setCartOpen }) {
   const dispatch = useDispatch();
+  const { isLoaded, isSignedIn, user } = useUser();
+  if (user) {
+    console.log(`🚀${user.firstName} is logged in!🚀`, "fullname: ",user.fullName, "id: ",user.id);
+  } else {
+    console.log("🚀No one is logged in!🚀")
+  }
+
+  isSignedIn
+  user
   const [open, setOpen] = useState(false);
   const cart = useSelector((state) => state.cartReducer.products);
   let cartTotal = 0;
@@ -57,7 +67,7 @@ function Navbar({ cartOpen, setCartOpen }) {
           </Link>
         </div>
         <div>
-          <div className="md:flex hidden uppercase items-center gap-8 font-[Poppins]">
+          <div className="lg:flex hidden uppercase items-center gap-8 font-[Poppins]">
             <NavLinks handleClose={setOpen} />
           </div>
           <ul
@@ -67,6 +77,7 @@ function Navbar({ cartOpen, setCartOpen }) {
         `}
           >
             <div className="flex justify-end">
+
               {open && (
                 <VscChromeClose
                   size={20}
@@ -75,7 +86,17 @@ function Navbar({ cartOpen, setCartOpen }) {
                 />
               )}
             </div>
+            {!isLoaded || !isSignedIn && <Link to="/sign-in">
+              <button className="bg-black text-white py-2 px-4 rounded-md w-[95%] mt-2" onClick={() => setOpen(!open)}>Sign In</button>
+            </Link>}
+            {isLoaded && isSignedIn &&
+            <div className="flex items-center">
+            <UserButton />
+            <div className="ml-2">{user.firstName}</div>
+            </div>
+            }
             <NavLinks className="mt-4" handleClose={setOpen} />
+            {isLoaded && isSignedIn && <div className="flex justify-center items-center bg-black text-white rounded-md py-2 px-4 w-[92%]"><SignOutButton/></div>}
           </ul>
           <ul
             className={`z-30 h-[100vh] flex flex-col
@@ -152,20 +173,30 @@ function Navbar({ cartOpen, setCartOpen }) {
           </ul>
           <div className="flex items-center">
             <GiHamburgerMenu
-              className="mr-4 md:hidden"
+              className="mr-4 lg:hidden"
               size={25}
               onClick={() => setOpen(!open)}
             />
             <BsCart2
-              className="md:hidden"
+              className="lg:hidden"
               size={28}
               color={cart.length === 0 ? "black" : "red"}
               onClick={() => setCartOpen(!cartOpen)}
             />
           </div>
         </div>
-        <div className="md:block hidden">
-          <BsCart2
+        <div className="lg:block hidden">
+          <div className="flex justify-center items-center">
+          {!isLoaded || !isSignedIn && <Link to="/sign-in">
+              <button className="bg-black text-white py-2 px-4 rounded-md mt-2" onClick={() => setOpen(!open)}>Sign In</button>
+            </Link>}
+            {isLoaded && isSignedIn &&
+            <div className="flex items-center">
+            <UserButton />
+            <div className="ml-2">{user.firstName}</div>
+            </div>
+            }
+            <BsCart2
             className="cursor-pointer mx-10"
             size={30}
             color={cart.length === 0 ? "black" : "red"}
@@ -173,7 +204,8 @@ function Navbar({ cartOpen, setCartOpen }) {
               console.log("open cart");
               setCartOpen(true);
             }}
-          />
+            />
+          </div>
         </div>
       </div>
     </nav>
