@@ -83,7 +83,7 @@ function Home() {
           <h1 className="font-bold text-3xl">Lightroom Presets</h1>
           <div>
             <p className="text-justify xl:text-2xl">
-            It can be extremely frustrating and time-consuming to edit photos. Trust me, I understand. That’s why I created a collection of presets that simplify the editing process and give your photos that perfect touch. My presets are compatible with Adobe Lightroom as well as Camera Raw. With a range of options to chose from, my presets can help you achieve the perfect look to your photos, below you can find all varieties of my presets. As well as LUT’s to bring your video footage to the next level.
+            It can be extremely frustrating and time-consuming to edit photos. Trust me, I understand. That’s why I created a collection of presets that simplify the editing process and give your photos that perfect touch. My presets are compatible with Adobe Lightroom as well as Camera Raw. With a range of options to chose from, my presets can help you achieve the perfect look to your photos. Below you can find all varieties of my presets as well as LUT’s to bring your video footage to the next level.
             </p>
             <div className="w-[80%] flex justify-between md:w-[60%] lg:w-[40%]">
               <Link to="/presets">

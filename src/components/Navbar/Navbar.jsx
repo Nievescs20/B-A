@@ -72,7 +72,7 @@ function Navbar({ cartOpen, setCartOpen }) {
           </div>
           <ul
             className={`z-30
-        md:hidden bg-white fixed w-3/5 top-0 overflow-y-auto bottom-0 py-4 pl-4
+        lg:hidden bg-white fixed w-3/5 top-0 overflow-y-auto bottom-0 py-4 pl-4
         duration-500 ${open ? "right-0" : "right-[-100%]"}
         `}
           >
@@ -175,7 +175,11 @@ function Navbar({ cartOpen, setCartOpen }) {
             <GiHamburgerMenu
               className="mr-4 lg:hidden"
               size={25}
-              onClick={() => setOpen(!open)}
+              onClick={() => {
+                console.log("CLICK!")
+                console.log("open: ", open)
+                setOpen(!open)}
+              }
             />
             <BsCart2
               className="lg:hidden"
